@@ -70,6 +70,15 @@ display: table;
 .text-left {text-align: left;}
 
 .none {display: none;}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.show {
+  top: 5em !important;
+}
 /*RESET STYLE END*/
 
 // IMPORT BEGINNER
@@ -77,3 +86,118 @@ display: table;
 @import "app/import/mixin";
 @import "app/import/fonts";
 // IMPORT END
+
+/*HEADER BEGINNER*/
+header {
+  height: 803px;
+  // display: block;
+  background: url(../img/bg-header.jpg) no-repeat  50% 50%;
+  background-size: cover;
+}
+
+section.logo-menu {
+  padding-top: 50px;
+  .logo{display: inline-block;}
+}
+
+
+
+
+nav {
+  width: 25.9%;
+  // background: $primary;
+
+  div.toggle {
+    position: relative;
+    display:inline-block;
+    width: 40px;
+    height: 36px;
+    // margin: 15px 0 0 7px;
+    input {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      cursor: pointer;
+      &:checked {
+        + span {
+          background: transparent;
+          &:after {
+            transform: rotate(45deg) translate(-1px, -12px);
+          }
+          &:before {
+            transform: rotate(-45deg) translate(-4px, 16px);
+          }
+        }
+      }
+    }
+    span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      margin-top: 10px;
+      transition: all 0.1s;
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        top: -12px;
+        transition: all 0.3s;
+      }
+      &:after {
+        top: 12px;
+      }
+    }
+
+  }
+
+  ul.menu {
+    position: absolute;
+    top: -20em;
+    right: 5em;
+    background: $nav;
+    transition: all 0.5s ease;
+    width: 200px;
+    // margin-top: -20em;
+    flex-direction: column;
+    text-align: center;
+
+    li {
+      transition: background 0.5s ease;
+      &:hover {background: $nav2;}
+      a {
+        display: block;
+        padding: 10px 15px;
+        font: 16px Arial, sans-serif;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+// @media screen and (max-width: 600px) {
+//  nav div.toggle {display: inline-block;}
+//
+//  nav ul.menu {
+//    position: absolute;
+//    width: 70%;
+//    margin-left: -70%;
+//    flex-direction: column;
+//    text-align: center;
+//  }
+//
+//  nav ul.menu.show {
+//    margin-left: 0;
+//  }
+//
+//
+// }
+
+/*HEADER END*/
