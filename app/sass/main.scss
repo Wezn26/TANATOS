@@ -227,5 +227,14 @@ section.header-middle {
   }
 }
 /*Section Header Middle End*/
-
+img#open {
+  display: inline-block;
+  margin: 100px 0 0 47.2%;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  &:hover {
+    -webkit-filter: drop-shadow(0 0 3px rgba(255,255,255,0.9));
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.9));
+  }
+}
 /*HEADER END*/

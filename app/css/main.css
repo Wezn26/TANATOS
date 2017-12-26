@@ -290,4 +290,20 @@ section.header-middle div.header-btn button:hover {
 }
 
 /*Section Header Middle End*/
+img#open {
+  display: inline-block;
+  margin: 100px 0 0 47.2%;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+img#open:hover {
+  -webkit-filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.9));
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.9));
+}
+
 /*HEADER END*/
