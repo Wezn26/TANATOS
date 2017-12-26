@@ -50,6 +50,7 @@ html {
 body {
   height: 100%;
   background-color: #fff;
+  font: 16px 'Open Sans', sans-serif;
 }
 
 .left {
@@ -112,6 +113,7 @@ header {
           background-size: cover;
 }
 
+/*Logotip*/
 section.logo-menu {
   padding-top: 50px;
 }
@@ -120,8 +122,16 @@ section.logo-menu .logo {
   display: inline-block;
 }
 
+/*Navigation Beginner*/
 nav {
   width: 25.9%;
+}
+
+nav label {
+  margin-right: 16px;
+  vertical-align: top;
+  color: #fff;
+  cursor: pointer;
 }
 
 nav div.toggle {
@@ -219,4 +229,65 @@ nav ul.menu li a {
   color: #fff;
 }
 
+/*Navigation End*/
+/*Section Header Middle Beginner*/
+section.header-middle {
+  margin-top: 224px;
+}
+
+section.header-middle h1 {
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  color: #fff;
+}
+
+section.header-middle h1 span {
+  color: #f7600e;
+}
+
+section.header-middle h2 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
+  color: #fff;
+}
+
+section.header-middle div.header-btn {
+  margin-top: 64px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.header-middle div.header-btn button {
+  padding: 20px 76px;
+  background: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #65696e;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+section.header-middle div.header-btn button:last-child {
+  margin-left: 27px;
+}
+
+section.header-middle div.header-btn button:hover {
+  background: #f7600e;
+  border: none;
+}
+
+/*Section Header Middle End*/
 /*HEADER END*/

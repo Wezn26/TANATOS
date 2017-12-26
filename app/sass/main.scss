@@ -42,6 +42,7 @@ html {height: 100%;}
 body {
   height: 100%;
   background-color: #fff;
+  font: 16px 'Open Sans', sans-serif;
 }
 
 .left {
@@ -95,6 +96,7 @@ header {
   background-size: cover;
 }
 
+/*Logotip*/
 section.logo-menu {
   padding-top: 50px;
   .logo{display: inline-block;}
@@ -102,10 +104,15 @@ section.logo-menu {
 
 
 
-
+/*Navigation Beginner*/
 nav {
   width: 25.9%;
-  // background: $primary;
+  label {
+    margin-right: 16px;
+    vertical-align: top;
+    color: $w;
+    cursor: pointer;
+  }
 
   div.toggle {
     position: relative;
@@ -164,7 +171,6 @@ nav {
     background: $nav;
     transition: all 0.5s ease;
     width: 200px;
-    // margin-top: -20em;
     flex-direction: column;
     text-align: center;
 
@@ -180,24 +186,46 @@ nav {
     }
   }
 }
+/*Navigation End*/
 
+/*Section Header Middle Beginner*/
+section.header-middle {
+  margin-top: 224px;
+  h1 {
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    color: $w;
+    span{color: $things;}
+  }
 
-// @media screen and (max-width: 600px) {
-//  nav div.toggle {display: inline-block;}
-//
-//  nav ul.menu {
-//    position: absolute;
-//    width: 70%;
-//    margin-left: -70%;
-//    flex-direction: column;
-//    text-align: center;
-//  }
-//
-//  nav ul.menu.show {
-//    margin-left: 0;
-//  }
-//
-//
-// }
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    color: $w;
+  }
+
+  div.header-btn {
+    margin-top: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+    button {
+      padding: 20px 76px;
+      background: transparent;
+      text-transform: uppercase;
+      color: $w;
+      cursor: pointer;
+      border: 1px solid $bd;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      &:last-child {margin-left: 27px;}
+      &:hover {background: $things; border: none;}
+    }
+  }
+}
+/*Section Header Middle End*/
 
 /*HEADER END*/
