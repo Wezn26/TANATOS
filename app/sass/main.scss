@@ -241,7 +241,9 @@ img#open {
 
 /*SECTION AFTER HEADER BEGINNER*/
 section.after-header {
+  display: none;
   height: 503px;
+  // visibility: hidden;
   padding-top: 101px;
 }
 
@@ -291,4 +293,30 @@ ul.design {
     }
   }
 }
-/*SECTION AFETR HEADER END*/
+/*SECTION AFTER HEADER END*/
+
+/*SECTION SUBSCRIBE BEGINNER*/
+section.subscribe {
+  display: block;
+  height: 250px;
+  padding-top: 100px;
+  background: url(../img/bg-subscribe.jpg) no-repeat;
+  form {
+    display: block;
+      input[type="text"] {
+      @include subscribe;
+      width: 50%;
+      padding: 21px 0 18px 36px;
+    }
+    input[type="submit"] {
+      @include subscribe;
+      margin-left: 30px;
+      padding: 20px 90px;
+      background: $things;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $w;
+    }
+  }
+}
+/*SECTION SUBSCRIBE END*/

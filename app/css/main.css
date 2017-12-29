@@ -309,6 +309,7 @@ img#open:hover {
 /*HEADER END*/
 /*SECTION AFTER HEADER BEGINNER*/
 section.after-header {
+  display: none;
   height: 503px;
   padding-top: 101px;
 }
@@ -387,4 +388,37 @@ ul.design li p {
   color: #3b434c;
 }
 
-/*SECTION AFETR HEADER END*/
+/*SECTION AFTER HEADER END*/
+/*SECTION SUBSCRIBE BEGINNER*/
+section.subscribe {
+  display: block;
+  height: 250px;
+  padding-top: 100px;
+  background: url(../img/bg-subscribe.jpg) no-repeat;
+}
+
+section.subscribe form {
+  display: block;
+}
+
+section.subscribe form input[type="text"] {
+  border: none;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+  width: 50%;
+  padding: 21px 0 18px 36px;
+}
+
+section.subscribe form input[type="submit"] {
+  border: none;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+  margin-left: 30px;
+  padding: 20px 90px;
+  background: #f7600e;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*SECTION SUBSCRIBE END*/
