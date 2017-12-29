@@ -2,3 +2,12 @@
   border: none;
   border-radius: 9px;
 }
+@mixin h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
+@mixin p {
+  text-align: center;
+  line-height: 30px;
+}

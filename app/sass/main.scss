@@ -243,7 +243,6 @@ img#open {
 section.after-header {
   display: none;
   height: 503px;
-  // visibility: hidden;
   padding-top: 101px;
 }
 
@@ -320,3 +319,54 @@ section.subscribe {
   }
 }
 /*SECTION SUBSCRIBE END*/
+
+/*SECTION OUR WORK BEGINNER*/
+section.our-work {
+  padding: 100px 0;
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 56px;
+    text-transform: uppercase;
+    color: $txt;
+    border: 1px solid $bd;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    &:hover {background: $things; border: none;}
+  }
+}
+div.descr-work {
+  display: block;
+  margin: 0 auto;
+  width: 461px;
+  h1 {
+    @include h1;
+    span{color: $things;}
+  }
+  p{
+    @include p;
+  }
+}
+
+ul.work-img {
+  margin: 100px 0;
+  li {
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    &:nth-child(3n) {margin-right: 0;}
+    a {
+      display: block;
+      width: 360px;
+      height: 360px;
+      background: url(../img/our-works.jpg) no-repeat;
+      &.monitor {background-position: -575px 0;}
+      &.notebook {background-position: -1148px 0;}
+      &.laptop {background-position: -1725px 0;}
+      &.coffee {background-position: -2623px -50px;}
+      &.item-else {background-position: -3160px -0;}
+    }
+  }
+}
+/*SECTION OUR WORK END*/

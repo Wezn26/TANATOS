@@ -422,3 +422,91 @@ section.subscribe form input[type="submit"] {
 }
 
 /*SECTION SUBSCRIBE END*/
+/*SECTION OUR WORK BEGINNER*/
+section.our-work {
+  padding: 100px 0;
+}
+
+section.our-work button {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 56px;
+  text-transform: uppercase;
+  color: #3b434c;
+  border: 1px solid #65696e;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+section.our-work button:hover {
+  background: #f7600e;
+  border: none;
+}
+
+div.descr-work {
+  display: block;
+  margin: 0 auto;
+  width: 461px;
+}
+
+div.descr-work h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
+
+div.descr-work h1 span {
+  color: #f7600e;
+}
+
+div.descr-work p {
+  text-align: center;
+  line-height: 30px;
+}
+
+ul.work-img {
+  margin: 100px 0;
+}
+
+ul.work-img li {
+  display: inline-block;
+  margin: 0 15px 15px 0;
+}
+
+ul.work-img li:nth-child(3n) {
+  margin-right: 0;
+}
+
+ul.work-img li a {
+  display: block;
+  width: 360px;
+  height: 360px;
+  background: url(../img/our-works.jpg) no-repeat;
+}
+
+ul.work-img li a.monitor {
+  background-position: -575px 0;
+}
+
+ul.work-img li a.notebook {
+  background-position: -1148px 0;
+}
+
+ul.work-img li a.laptop {
+  background-position: -1725px 0;
+}
+
+ul.work-img li a.coffee {
+  background-position: -2623px -50px;
+}
+
+ul.work-img li a.item-else {
+  background-position: -3160px -0;
+}
+
+/*SECTION OUR WORK END*/
