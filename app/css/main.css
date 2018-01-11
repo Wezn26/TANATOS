@@ -465,11 +465,6 @@ div.descr-work h1 span {
   color: #f7600e;
 }
 
-div.descr-work p {
-  text-align: center;
-  line-height: 30px;
-}
-
 ul.work-img {
   margin: 100px 0;
 }
@@ -556,3 +551,72 @@ ul.work-img li a div.hover-block button.show-proj {
 }
 
 /*SECTION OUR WORK END*/
+/*SECTION SLIDER AFTER OUR WORK BEGINNER*/
+section.slider-after-our-work {
+  position: relative;
+  padding: 100px 0 100px 240px;
+  background: url(../img/bg-slider-after.jpg) no-repeat;
+}
+
+section.slider-after-our-work button {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+section.slider-after-our-work button#slider-left {
+  left: 10%;
+}
+
+section.slider-after-our-work button#slider-right {
+  right: 10%;
+}
+
+section#slider {
+  width: 891px;
+  overflow: hidden;
+}
+
+ul#polosa {
+  position: relative;
+  left: 0;
+  width: 2673px;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+ul#polosa li {
+  position: relative;
+  width: 891px;
+  float: left;
+  color: #fff;
+}
+
+ul#polosa li div.img-slide {
+  display: block;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  background: url(../img/img-slide.jpg) no-repeat;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+ul#polosa li h2 {
+  margin: 49px 0 40px 0;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+
+ul#polosa li p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*SECTION SLIDER AFTER OUR WORK END*/

@@ -410,3 +410,63 @@ ul.work-img {
   }
 }
 /*SECTION OUR WORK END*/
+
+/*SECTION SLIDER AFTER OUR WORK BEGINNER*/
+section.slider-after-our-work {
+  position: relative;
+  padding: 100px 0 100px 240px;
+  background: url(../img/bg-slider-after.jpg) no-repeat;
+  button {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: $w;
+    cursor: pointer;
+  }
+  button#slider-left {
+    left: 10%;
+  }
+  button#slider-right {
+    right: 10%;
+  }
+}
+
+section#slider {
+  width: 891px;
+  // height: 30px;
+  overflow: hidden;
+}
+ul#polosa {
+  position: relative;
+  left: 0;
+  width: 2673px;
+  transition: all ease 1s;
+  li {
+    position: relative;
+    width: 891px;
+    // height: 300px;
+    float: left;
+    color: $w;
+    div.img-slide {
+      display: block;
+      width: 122px;
+      height: 122px;
+      margin: 0 auto;
+      background: url(../img/img-slide.jpg) no-repeat;
+      border-radius: 50%;
+    }
+    h2 {
+      margin: 49px 0 40px 0;
+      text-align: center;
+      font-size: 25px;
+      font-style: italic;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+/*SECTION SLIDER AFTER OUR WORK END*/
