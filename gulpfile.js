@@ -22,14 +22,14 @@ gulp.task('sass', function() {
 });
 
 //SCRIPTS
-gulp.task('scripts', function() {
-  return gulp.src([
-    'app/js/script.js'
-   ])
-  .pipe(concat('libs.min.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest('app/js'));
-});
+// gulp.task('scripts', function() {
+//   return gulp.src([
+//     'app/js/script.js'
+//    ])
+//   .pipe(concat('libs.min.js'))
+//   .pipe(uglify())
+//   .pipe(gulp.dest('app/js'));
+// });
 
 //CSS-LIBS
 gulp.task('css-libs', ['sass'], function() {

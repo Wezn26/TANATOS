@@ -419,6 +419,7 @@ section.subscribe form input[type="submit"] {
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 
 /*SECTION SUBSCRIBE END*/
@@ -427,7 +428,7 @@ section.our-work {
   padding: 100px 0;
 }
 
-section.our-work button {
+section.our-work button.show-more {
   display: block;
   margin: 0 auto;
   padding: 18px 56px;
@@ -443,7 +444,7 @@ section.our-work button {
   transition: background 0.3s ease;
 }
 
-section.our-work button:hover {
+section.our-work button.show-more:hover {
   background: #f7600e;
   border: none;
 }
@@ -483,6 +484,7 @@ ul.work-img li:nth-child(3n) {
 }
 
 ul.work-img li a {
+  position: relative;
   display: block;
   width: 360px;
   height: 360px;
@@ -507,6 +509,50 @@ ul.work-img li a.coffee {
 
 ul.work-img li a.item-else {
   background-position: -3160px -0;
+}
+
+ul.work-img li a:hover div.hover-block {
+  visibility: visible;
+}
+
+ul.work-img li a div.hover-block {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 87px;
+  background: rgba(230, 92, 17, 0.9);
+  color: #fff;
+  -webkit-transition: visibility 0.3s ease-in-out;
+  -o-transition: visibility 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out;
+}
+
+ul.work-img li a div.hover-block h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul.work-img li a div.hover-block p {
+  margin: 30px 0 30px 0;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 38px;
+}
+
+ul.work-img li a div.hover-block button.show-proj {
+  margin-left: 76px;
+  padding: 20px 46px 15px 46px;
+  text-transform: uppercase;
+  color: #f7600e;
+  border: none;
+  background: #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  cursor: pointer;
 }
 
 /*SECTION OUR WORK END*/
