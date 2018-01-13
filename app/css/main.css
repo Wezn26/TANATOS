@@ -620,3 +620,132 @@ ul#polosa li p {
 }
 
 /*SECTION SLIDER AFTER OUR WORK END*/
+/*SECTION OUR TEAM BEGINNER*/
+section.our-team {
+  padding: 102px 0;
+}
+
+div.team-descr {
+  display: block;
+  margin: 0 auto;
+  max-width: 488px;
+}
+
+div.team-descr h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
+
+div.team-descr h1 span {
+  color: #f7600e;
+}
+
+div.team-descr p {
+  padding: 30px 0 104px 0;
+  text-align: center;
+  line-height: 28px;
+  color: #3b434c;
+}
+
+ul.team {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+ul.team li {
+  -webkit-flex-basis: 264px;
+      -ms-flex-preferred-size: 264px;
+          flex-basis: 264px;
+  margin-right: 28px;
+}
+
+ul.team li:last-child {
+  margin-right: 0;
+}
+
+ul.team li a {
+  display: block;
+  width: 235px;
+  height: 278px;
+  border: 1px solid #c4c6c9;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: url(../img/our-team.png) no-repeat;
+}
+
+ul.team li a.harvey {
+  background-position: -274px 0;
+}
+
+ul.team li a.janet {
+  background-position: -548px 0;
+}
+
+ul.team li a.kevin {
+  background-position: -832px 0;
+}
+
+ul.team li h2 {
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  color: #3b434c;
+}
+
+ul.team li p {
+  margin-top: 33px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+ul.social-icons {
+  text-align: center;
+}
+
+ul.social-icons li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+ul.social-icons li:last-child {
+  margin-right: 0;
+}
+
+ul.social-icons li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/team-icons.png) no-repeat;
+}
+
+ul.social-icons li a.tw {
+  background-position: -26px 0;
+}
+
+ul.social-icons li a.gpl {
+  background-position: -52px 0;
+}
+
+ul.crumbs {
+  margin: 0 auto;
+}
+
+ul.crumbs li {
+  display: inline-block;
+  margin-right: 19px;
+  width: 12px;
+  height: 12px;
+  background: #c4c6c9;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+ul.crumbs li:last-child {
+  margin-right: 0;
+}
+
+/*SECTION OUR TEAM END*/
