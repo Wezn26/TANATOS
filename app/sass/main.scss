@@ -213,14 +213,8 @@ section.header-middle {
     flex-wrap: wrap;
     justify-content: center;
     button {
-      padding: 20px 76px;
-      background: transparent;
-      text-transform: uppercase;
-      color: $w;
-      cursor: pointer;
+      @include button;
       border: 1px solid $bd;
-      border-radius: 8px;
-      transition: background 0.3s ease;
       &:last-child {margin-left: 27px;}
       &:hover {background: $things; border: none;}
     }
@@ -238,6 +232,8 @@ img#open {
   }
 }
 /*HEADER END*/
+
+/*MAIN BEGINNER*/
 
 /*SECTION AFTER HEADER BEGINNER*/
 section.after-header {
@@ -484,10 +480,7 @@ div.team-descr {
     span{color: $things;}
   }
   p {
-    padding: 30px 0 104px 0;
-    text-align: center;
-    line-height: 28px;
-    color: $txt;
+    @include p;
   }
 }
 
@@ -563,3 +556,69 @@ ul.crumbs {
   }
 }
 /*SECTION OUR TEAM END*/
+
+/*MAIN END*/
+
+/*FOOTER BEGINNER*/
+
+/*SECTION FOOTER UP BEGINNER*/
+section.footer-up {
+  padding: 104px 0 20px 0;
+  background: url(../img/footer-up-bg.jpg) no-repeat;
+}
+
+div.say-hello {
+  @extend .team-descr;
+  max-width: 468px;
+  p {
+    color: $w;
+  }
+}
+
+form.footer {
+  display: block;
+  margin: 0 auto;
+  max-width: 834px;
+  input[type=text] {
+    width: 47.9%;
+    &:first-child {margin-right: 30px;}
+    @include form;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 32px 0;
+    @include form;
+  }
+
+  input[type="submit"] {
+    @include button;
+    display: inline-block;
+    border: none;
+    background: $things;
+  }
+
+  ul.form-icons {
+    display: inline-block;
+    li  {
+      display: inline-block;
+      margin-right: 20px;
+      &:last-child {margin-right: 0;}
+      a {
+        display: block;
+        width: 43px;
+        height: 43px;
+        background: url(../img/form-social-icons.png) no-repeat;
+        &.form-tw {background-position: -46px 0;}
+        &.form-gpl {background-position: -92px 0;}
+        &.form-circle {background-position: -138px 0;}
+        &.form-be {background-position: -184px 0;}
+      }
+    }
+  }
+}
+
+
+/*SECTION FOOTER UP END*/
+
+/*FOOTER END*/

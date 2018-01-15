@@ -272,12 +272,12 @@ section.header-middle div.header-btn button {
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
-  border: 1px solid #65696e;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   -webkit-transition: background 0.3s ease;
   -o-transition: background 0.3s ease;
   transition: background 0.3s ease;
+  border: 1px solid #65696e;
 }
 
 section.header-middle div.header-btn button:last-child {
@@ -307,6 +307,7 @@ img#open:hover {
 }
 
 /*HEADER END*/
+/*MAIN BEGINNER*/
 /*SECTION AFTER HEADER BEGINNER*/
 section.after-header {
   display: none;
@@ -463,6 +464,13 @@ div.descr-work h1 {
 
 div.descr-work h1 span {
   color: #f7600e;
+}
+
+div.descr-work p {
+  padding: 30px 0 104px 0;
+  text-align: center;
+  line-height: 28px;
+  color: #3b434c;
 }
 
 ul.work-img {
@@ -625,23 +633,23 @@ section.our-team {
   padding: 102px 0;
 }
 
-div.team-descr {
+div.team-descr, div.say-hello {
   display: block;
   margin: 0 auto;
   max-width: 488px;
 }
 
-div.team-descr h1 {
+div.team-descr h1, div.say-hello h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 35px;
 }
 
-div.team-descr h1 span {
+div.team-descr h1 span, div.say-hello h1 span {
   color: #f7600e;
 }
 
-div.team-descr p {
+div.team-descr p, div.say-hello p {
   padding: 30px 0 104px 0;
   text-align: center;
   line-height: 28px;
@@ -772,3 +780,102 @@ ul.crumbs li:last-child {
 }
 
 /*SECTION OUR TEAM END*/
+/*MAIN END*/
+/*FOOTER BEGINNER*/
+/*SECTION FOOTER UP BEGINNER*/
+section.footer-up {
+  padding: 104px 0 20px 0;
+  background: url(../img/footer-up-bg.jpg) no-repeat;
+}
+
+div.say-hello {
+  max-width: 468px;
+}
+
+div.say-hello p {
+  color: #fff;
+}
+
+form.footer {
+  display: block;
+  margin: 0 auto;
+  max-width: 834px;
+}
+
+form.footer input[type=text] {
+  width: 47.9%;
+  padding: 20px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  font-size: 16px;
+  color: #3b434c;
+}
+
+form.footer input[type=text]:first-child {
+  margin-right: 30px;
+}
+
+form.footer textarea {
+  width: 100%;
+  margin: 32px 0;
+  padding: 20px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  font-size: 16px;
+  color: #3b434c;
+}
+
+form.footer input[type="submit"] {
+  padding: 20px 76px;
+  background: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  display: inline-block;
+  border: none;
+  background: #f7600e;
+}
+
+form.footer ul.form-icons {
+  display: inline-block;
+}
+
+form.footer ul.form-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+form.footer ul.form-icons li:last-child {
+  margin-right: 0;
+}
+
+form.footer ul.form-icons li a {
+  display: block;
+  width: 43px;
+  height: 43px;
+  background: url(../img/form-social-icons.png) no-repeat;
+}
+
+form.footer ul.form-icons li a.form-tw {
+  background-position: -46px 0;
+}
+
+form.footer ul.form-icons li a.form-gpl {
+  background-position: -92px 0;
+}
+
+form.footer ul.form-icons li a.form-circle {
+  background-position: -138px 0;
+}
+
+form.footer ul.form-icons li a.form-be {
+  background-position: -184px 0;
+}
+
+/*SECTION FOOTER UP END*/
+/*FOOTER END*/
