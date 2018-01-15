@@ -1,3 +1,31 @@
+//OUR-TEAM HOVER CRUMBS
+
+(function () {
+  var li1 = document.getElementById('li1'),
+      li2 = document.getElementById('li2'),
+      li3 = document.getElementById('li3'),
+      li4 = document.getElementById('li4');
+
+  var crumb1 = document.getElementById('crumb1'),
+      crumb2 = document.getElementById('crumb2'),
+      crumb3 = document.getElementById('crumb3'),
+      crumb4 = document.getElementById('crumb4');
+
+      // crumb1.style.background = 'red';
+
+  li1.onmouseover = function () {
+    crumb1.style.width = '15px';
+    crumb1.style.height = '15px';
+    crumb1.style.background = '#f7600e';
+  };
+  li1.onmouseout =function () {
+    crumb1.style.width = '';
+    crumb1.style.height = '';
+    crumb1.style.background = '';
+  };
+
+})();
+
 //MOBILE MENU
 (function () {
   var menu = document.getElementById('menu'),
