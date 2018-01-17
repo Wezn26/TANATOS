@@ -878,4 +878,44 @@ form.footer ul.form-icons li a.form-be {
 }
 
 /*SECTION FOOTER UP END*/
+/*SECTION FOOTER BOTTOM BEGINNER*/
+section.footer-bottom {
+  padding: 47px 0;
+  background: #3b434c;
+  color: #fff;
+}
+
+section.footer-bottom h4.start {
+  display: inline-block;
+}
+
+section.footer-bottom h4.end {
+  display: inline-block;
+}
+
+section.footer-bottom h4.end i {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #d42a44;
+}
+
+/*SECTION FOOTER BOTTOM END*/
 /*FOOTER END*/
+/*MEDIA SCREENS BEGINNER*/
+@media screen and (max-width: 320px) {
+  section.logo-menu {
+    padding-top: 20px;
+  }
+  nav div.toggle {
+    margin-top: 10px;
+  }
+  section.header-middle {
+    margin-top: 213px;
+  }
+  section.header-middle section.header-middle h1 {
+    font-size: 53px;
+  }
+}
+
+/*MEDIA SCREENS END*/

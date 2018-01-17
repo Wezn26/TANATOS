@@ -617,8 +617,32 @@ form.footer {
     }
   }
 }
-
-
 /*SECTION FOOTER UP END*/
 
+/*SECTION FOOTER BOTTOM BEGINNER*/
+section.footer-bottom {
+  padding: 47px 0;
+  background: $txt;
+  color: $w;
+  h4.start {
+    display: inline-block;
+    }
+  h4.end {
+    display: inline-block;
+    i {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: $dot;
+    }
+  }
+}
+/*SECTION FOOTER BOTTOM END*/
+
 /*FOOTER END*/
+
+/*MEDIA SCREENS BEGINNER*/
+
+
+}
+/*MEDIA SCREENS END*/
