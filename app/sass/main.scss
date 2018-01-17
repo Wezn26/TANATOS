@@ -642,7 +642,66 @@ section.footer-bottom {
 /*FOOTER END*/
 
 /*MEDIA SCREENS BEGINNER*/
+@media screen and (max-width: 320px) {
+  /*HEADER BEGINNER*/
+  header {height: 960px;}
+  section.logo-menu {padding-top: 20px;}
+  nav div.toggle {margin-top: 10px;}
+  section.header-middle h1 {font-size: 50px;}
+  section.header-middle h2 {font-size: 20px;}
+  section.header-middle div.header-btn {margin-top: 21px;}
+  section.header-middle div.header-btn button:last-child {margin: 20px 0 0 0;}
+  /*HEADER END*/
 
+  /*SECTION AFTER HEADER BEGINNER*/
+  section.after-header {height: 1400px;}
+  ul.design li {margin-right: 0;}
+  /*SECTION AFTER HEADER END*/
+
+  /*SECTION SUBSCRIBE BEGINNER*/
+  section.subscribe {padding-top: 70px;}
+  section.subscribe form input[type="text"] {width: 100%; margin-bottom: 20px;}
+  /*SECTION SUBSCRIBE END*/
+
+  /*SECTION OUR WORK BEGINNER*/
+  section.our-work {padding: 38px 0;}
+  div.descr-work {width: 100%;}
+  ul.work-img {margin: 0;}
+  ul.work-img li {margin: 0px 0px 20px 0;}
+  ul.work-img li a {width: 320px; height: 320px;}
+  /*SECTION OUR WORK END*/
+
+  /*SECTION SLIDER OUR WORK BEGINNER*/
+  section.slider-after-our-work {display: none;}
+  /*SECTION SLIDER OUR WORK END*/
+
+  /*SECTION OUR TEAM BEGINNER*/
+  section.our-team {padding: 51px 0;}
+  div.team-descr p, div.say-hello p {padding: 30px 0 60px 0; line-height: 36px;}
+  ul.team {justify-content: center;}
+  ul.team li.all-team {margin: 0 0 20px 0;}
+  ul.team li.all-team h2 {padding: 20px 0;}
+  ul.team li.all-team p {margin-top: 16px; line-height: 25px;}
+  ul.crumbs {margin-top: 0;}
+  /*SECTION OUR TEAM END*/
+
+  /*SECTION FOOTER UP BEGINNER*/
+  section.footer-up {height: 794px; padding: 0;}
+  div.say-hello {padding-top: 2em;}
+  div.say-hello p {padding: 20px 0 50px 0; line-height: 27px;}
+  form.footer input[type=text] {width: 100%;}
+  form.footer input[type=text]:first-child {margin: 0 0 20px 0;}
+  form.footer input[type="submit"] {display: block; margin: 0 auto;}
+  form.footer ul.form-icons {margin-top: 1em;}
+  /*SECTION FOOTER UP END*/
+
+  /*SECTION FOOTER BOTTOM BEGINNER*/
+  section.footer-bottom {padding: 32px 0;}
+  section.footer-bottom h4.start {display: inherit; margin-bottom: 1em; text-align: center;}
+  section.footer-bottom h4.end {display: inherit; text-align: center; float: none;}
+  /*SECTION FOOTER UP END*/
 
 }
+
+
 /*MEDIA SCREENS END*/
