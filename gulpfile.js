@@ -22,14 +22,14 @@ gulp.task('sass', function() {
 });
 
 //SCRIPTS
-// gulp.task('scripts', function() {
-//   return gulp.src([
-//     'app/js/script.js'
-//    ])
-//   .pipe(concat('libs.min.js'))
-//   .pipe(uglify())
-//   .pipe(gulp.dest('app/js'));
-// });
+gulp.task('scripts', function() {
+  return gulp.src([
+    'app/js/script.js'
+   ])
+  .pipe(concat('libs.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('app/js'));
+});
 
 //CSS-LIBS
 gulp.task('css-libs', ['sass'], function() {
@@ -79,7 +79,7 @@ gulp.task('img', function() {
 });
 
 //WATCH
-gulp.task('watch', ['browser-sync', 'css-libs', /*'scripts'*/], function() {
+gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
   gulp.watch('app/sass/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
